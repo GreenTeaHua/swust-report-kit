@@ -1,0 +1,33 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[邱锡鹏(2020)]{qiu2020nndl}
+邱锡鹏.
+\newblock 神经网络与深度学习\allowbreak[M].
+\newblock 北京: 机械工业出版社, 2020.
+
+\bibitem[Lecun et~al.(2015)Lecun, Bengio, and Hinton]{LeCun2015deep}
+LECUN Y, BENGIO Y, HINTON G.
+\newblock {Deep learning}\allowbreak[J/OL].
+\newblock Nature, 2015, 521\allowbreak (7553): 436-444.
+\newblock \url{https://doi.org/10.1038/nature14539}.
+
+\bibitem[Dalal et~al.(2005)Dalal and Triggs]{dalal2005hog}
+DALAL N, TRIGGS B.
+\newblock Histograms of oriented gradients for human
+  detection\allowbreak[C]//\allowbreak
+2005 {IEEE} Computer Society Conference on Computer Vision and Pattern
+  Recognition {(CVPR} 2005), 20-26 June 2005, San Diego, CA, {USA}.
+\newblock {IEEE} Computer Society, 2005: 886-893.
+
+\end{thebibliography}

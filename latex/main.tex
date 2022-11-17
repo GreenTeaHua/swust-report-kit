@@ -1,0 +1,53 @@
+%!TeX encoding = utf8
+%!TEX TS-program = xelatex
+%%%%%%%%%%%%西南科技大学大学%%%%%%%%%%%%%%
+%这里是软件课程设计\LaTeX模板，版本2.0，适用于老师可接受PDF格式的论文，字体大小及样式可自行修改！
+%请使用texlive 2019及以上版本使用xelatex 编译此模板！
+%%%%%%%%%%%%西南科技大学%%%%%%%%%%%%%%
+\documentclass{swustreport}
+\graphicspath{{figure/}}
+
+\renewcommand{\abstractname}{\large 摘要\\}%重定义摘要二字的大小
+
+
+\begin{document}
+%% 封面和相关表格
+%% word版，填写1-4页，转为pdf，命名为’MB202206.pdf‘，放于当前路径
+\includepdf[pages={1-4}]{MB202206.pdf}
+
+% 生成题目
+\begin{center}
+\huge{\textbf{一个设计题目}}
+\end{center}
+
+\thispagestyle{empty}
+\input{abstract.tex} % 摘要
+
+\thispagestyle{empty}
+\tableofcontents % 目录
+\newpage
+%% 正文开始----------------------------------------------------
+\pagestyle{plain}
+\setcounter{page}{1}
+% ----------------------------------------------------
+\input{experiment.tex}
+
+\input{conclusion.tex}
+
+
+% -------------------------------------------------------------
+%\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献} % xelatex 编译两次
+\begin{spacing}{1.0} % 行距
+	\zihao{5} \songti
+	\bibliography{ref}
+	\vspace{11bp}
+\end{spacing}
+
+\clearpage
+% ---------------------------------------------------------------------------------------
+\appendix
+
+\input{appendix.tex}
+
+\end{document}
